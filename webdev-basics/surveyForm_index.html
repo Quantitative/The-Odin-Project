@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FreeCodeCamp Survey Form</title>
+        <link rel="stylesheet" href="surveyForm_style.css">
+    </head>
+    
+    <body>
+        <div class="survey-grid">
+            <div class="survey-board">
+                <h1 id="survey-title">FreeCodeCamp Survey</h1>
+                <hr>
+                <div class="survey-form">
+                    <p class="survey-text">In this survey you will rate your satisfaction with freeCodeCamps responsive web development course</p>
+                    
+                    <div class="survey-form-question">
+                        <br>
+                        <p class="survey-text large-font-text"><b>1.</b> Personal info </p> 
+                        
+                        <br>
+                        <br>
+                        
+                        <form>
+                            <label for="fname" class="survey-text survey-label-lineup">First name: &nbsp &nbsp </label>
+                            
+                            <input type="text" id="fname" name="fname" class="survey-text-input-box">
+                            
+                            <br>
+                            <br>
+                            
+                            <label for="lname" class="survey-text survey-label-lineup">Last name: &nbsp &nbsp </label>
+                            
+                            <input type="text" id="lname" name="lname" class="survey-text-input-box">
+                            
+                            <br>
+                            <br>
+                            
+                            <label for="email" class="survey-text survey-label-lineup">Email: &nbsp &nbsp
+                            </label>
+                
+                            <input type="text" id="email" name="email"
+                            class="survey-text-input-box">
+                        </form>
+                    </div>
+                    
+                    
+                    <div class="survey-form-question">
+                        <br>
+                        <p class="survey-text large-font-text"><b>2.</b> Rating your education</p> 
+                        
+                        <br>
+                        <br>
+                        
+                        <form>
+                            <label for="worthit" id="worthit" class="survey-text survey-label-lineup">Worth the time: &nbsp &nbsp </label>
+                            <input type="range" id="worthit" name="worthit"
+                            class="survey-input-slider"
+                            min="1" max="5">
+                            
+                            <br>
+                            <br>
+                            
+                            <label for="new" id="new" class="survey-text survey-label-lineup">New concepts: &nbsp &nbsp </label>
+                            <input type="range" id="new" name="new"
+                            class="survey-input-slider"
+                            min="1" max="5">
+                        </form>
+                    </div>
+                    
+                    <div class="survey-form-question">
+                        <br>
+                        <p class="survey-text large-font-text"><b>3.</b> Would you recommend the course to a friend? </p> <br> <br>
+                        <form>
+                            <label for="survey-recommendations" id="survey-recommendations" class="survey-text survey-label-lineup">&nbsp &nbsp </label>
+                            
+                            <fieldset id="survey-recommendations">
+                                <input type="radio" value="no" name="survey-recommendations" class="survey-input-radio">
+                                
+                                <input type="radio" value="neutral" name="survey-recommendations" class="survey-input-radio">
+                                
+                                <input type="radio" value="yes" name="survey-recommendations" class="survey-input-radio">
+                            </fieldset>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

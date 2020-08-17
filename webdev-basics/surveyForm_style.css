@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+body {
+    background: #5373f3;
+}
+.survey-grid {
+    display: grid;
+    margin: 10vh 0px 10vh 0px;
+    grid-template-areas: ". survey .";
+    justify-content: center;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.survey-board {
+    grid-area: survey;
+    border-radius: 50px;
+    background: #f35363;
+    box-shadow:  -2px -2px 6px #cf4754, 
+                  2px 2px 6px #ff5f72;
+}
+
+#survey-title {
+    text-align: center;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.survey-board hr {
+    width: 25%;
+    background-color: black;
+    border: 1px solid black;
+    height: 3px;
+}
+
+.survey-form {
+    margin: 3vh 15% 3vh 15%;
+}
+
+.survey-form-question {
+    margin: inherit;
+    margin-top: none;
+}
+
+.survey-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    margin: none;
+}
+
+.survey-text-input-box {
+    border-radius: 50px;
+    background: #f35363;
+    box-shadow: inset -20px 20px 60px #cf4754, 
+                inset 20px -20px 60px #ff5f72;
+    border: none;
+}
+
+.survey-text-input-box:focus {
+    outline: none;
+}
+
+.survey-label-lineup {
+    display: inline-block;
+    float: left;
+    clear: left;
+    text-align: right;
+    width: 10vw;
+}
+
+.large-font-text {
+    font-size: 1.5em;
+}
+
+.form-formatting {
+    margin-top: none;
+}
+
+.survey-input-slider {
+    border-radius: 50px;
+    background: #f35363;
+    box-shadow: inset -20px -20px 60px #cf4754, 
+                inset 20px 20px 60px #ff5f72;
+}
+
+.survey-input-radio {
+    border-radius: 50px;
+    background: #f35363;
+    box-shadow: inset -20px -20px 60px #cf4754, 
+                inset 20px 20px 60px #ff5f72;
+}
+
+@media (max-width: 978px) {
+    .survey-grid {
+      grid-template-columns: 10% 80% 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .survey-grid {
+        grid-template-columns: 1% 98% 1%;
+    }
+}
