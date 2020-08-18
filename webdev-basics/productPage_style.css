@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0px 0px 0px 0px;
+}
+
+.nav-bar {
+    background-color: #273043;
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar-links {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    height: 9vh;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar-item {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    color: #dd0426;
+    position: relative;
+}
+
+.landing-page {
+    background: url("https://www.wallmesh.com/wp-content/uploads/2019/10/Paradise-Beach-Palm-Desktop-Wallpaper-2880x1800.jpg") top center;
+    height: 91vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+
+.landing-page-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 35vh;
+}
+
+.landing-page:before {
+    content: "";
+    background: rgba(39, 48, 67, 0.75);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.primary-landing-title {
+    color: #eff6ee;
+}
+
+.landing-page-header {
+    font-size: 60px;
+    color: white;
+    position: absolute;
+}
+
+
+
+
+
+.nav-links {
+    display: block;
+    text-decoration: none;
+    color: #dd0426;
+    padding: 7.5px;
+    border-radius: 50px;
+    background: #273043;
+    box-shadow: inset -20px -20px 60px #212939, 
+            inset 20px 20px 60px #2d374d;
+}
+
+main {
+    background-color: #eff6ee;
+}
+
+.description {
+    display: grid;
+    grid-template-areas:". . . . . . . . . . . . ."
+                        ". . . desc desc desc desc . . . . . ."
+                        ". . . desc desc desc desc . . . . . ."
+                        ". . . . . . . . . . . . ."
+                        ". . . . image image . . . . . . ."
+                        ". . . . image image . . story story story story ."
+                        ". . . . image image . . story story story story ."
+                        ". . . . . . . . . . . . ."
+                        ". . services services services services . . . . . . ."
+                        ". . services services services services . . CTA CTA CTA . ."
+                        ". . . . . . . . CTA CTA CTA . ."
+                        ". . . . . . . . . . . . .";
+    grid-template-rows: 7.5vh 1fr 1fr 12.5vh 2.5vh 1fr 1fr 10.5vh 1fr 1fr 1fr 10vh;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+.card {
+    font-size: 1em;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2% 5% 2% 5%;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+
+.description-card {
+    grid-area: desc;
+    
+}
+
+.story-card {
+    grid-area: story;
+}
+
+.services-card {
+    grid-area: services;
+}
+
+.card-header {
+    font-family: 'Karla', sans-serif;
+}
+
+.card-margins {
+    margin: 25px 10px 10px 20px;
+}
+
+.description-card-color {
+    background-color: #eff6ee;
+}
+
+.story-card-color {
+    background: #eeeff6;
+}
+
+.services-card-color {
+    background: #f6eeef;
+}
+
+.image-card {
+    grid-area: image;
+}
+
+.staggered-image {
+    max-width: 20vw;
+    max-height: auto;
+}
+
+.CTA-card {
+    grid-area: CTA;
+    display: grid;
+    grid-template-areas:"text-area"
+                        "CTA-strip";
+}
+
+.CTA-inner-card {
+    grid-area: text-area;
+}
+
+.CTA-bottom-strip {
+    display: flex;
+    grid-area: CTA-strip;
+    justify-content: flex-end;
+}
+
+.CTA-btn {
+    display: block;
+    text-decoration: none;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #c70422, #ec0429);
+    color: #000;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    padding: 7.5px;
+    text-align: center;
+    
+    transition: all 350ms;
+}
+
+
+
+.footer-socialmedia {
+    width: 2.25em;
+    border-radius: 50%;
+}
+
+.footer-links {
+    display: block;
+    text-decoration: none;
+    color: #dd0426;
+}
+
+.footer-bar-item {
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    margin: 0px 3.5em 0px 3.5em;
+}
+
+.footer-bar-links {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.CTA-btn:hover {
+     transform: translateY(-3px) scale(1.1);
+}
+
+@media screen and (max-width: 924px) {
+    .description {
+        grid-template-areas:
+            " . . . . . ."
+            ". desc desc desc desc ."
+            ". desc desc desc desc ."
+            ". . . . . ."
+            ". image image image image ."
+            ". image image image image ."
+            ". . . . . ."
+            ". story story story story ."
+            ". story story story story ."
+            ". . . . . ."
+            ". services services services services ."
+            ". services services services services ." 
+            ". . . . . ."
+            ". CTA CTA CTA CTA ."
+            ". CTA CTA CTA CTA ."
+            ". . . . . .";
+        grid-template-columns: 10px repeat(4, 1fr) 10px;
+        grid-template-rows: 5vh 1fr 1fr 5vh 1fr 1fr 5vh 1fr 1fr 5vh 1fr 1fr 5vh 1fr 1fr 5vh;
+    }
+}
